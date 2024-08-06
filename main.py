@@ -21,7 +21,12 @@ class Calculator():
 n1 = int(input("Enter the First Number: "))
 n2 = int(input("Enter the Second Number: "))
 obj = Calculator(n1, n2)
-print(obj.sum)
-print(obj.sub)
-print(obj.mul)
-print(obj.div)
+operation = input("Enter the Operation you want to perform on these Numbers: ")
+if operation.lower() == "sum" or operation.lower() == "addition" or operation.lower() == "add":
+    print(obj.sum)
+elif operation.lower() == "subtraction" or operation.lower() == "minus":
+    print(obj.sub)
+elif operation.lower() == "multiply":
+    print(obj.mul)
+else:
+    print(obj.div)
