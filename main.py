@@ -22,11 +22,13 @@ n1 = int(input("Enter the First Number: "))
 n2 = int(input("Enter the Second Number: "))
 obj = Calculator(n1, n2)
 operation = input("Enter the Operation you want to perform on these Numbers: ")
+
+# try:
 if operation.lower() == "sum" or operation.lower() == "addition" or operation.lower() == "add":
     print(obj.sum)
 elif operation.lower() == "subtraction" or operation.lower() == "minus":
     print(obj.sub)
 elif operation.lower() == "multiply":
     print(obj.mul)
-else:
+elif operation.lower() == "divide" or operation.lower() == "division":
     print(obj.div)
